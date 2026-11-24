@@ -20,7 +20,7 @@ Hands-on notebooks from my **AI & Automation externship at Outamation** (May to 
 |---|---|---|---|
 | 01 | [LlamaIndex chatbot](notebooks/01-llamaindex-chatbot.ipynb) | Interactive chatbot on Gemini through LlamaIndex, keeping the chat history as `ChatMessage` objects | LlamaIndex, Gemini |
 | 02 | [Document data extraction](notebooks/02-document-data-extraction.ipynb) | Compares three PDF libraries on a multi-page title report: page text, tables, metadata, text blocks with bounding boxes and fonts, and rendering a page to an image | PyPDF2, pdfplumber, PyMuPDF |
-| 03 | [Image cleaning](notebooks/03-image-cleaning-opencv.ipynb) | Denoises a scanned image while keeping colour and edges, so OCR reads it better. Iterated to the 6th attempt to avoid over-smoothing. | OpenCV, NumPy |
+| 03 | [Image cleaning](notebooks/03-image-cleaning-opencv.ipynb) | Cleans a noisy scanned image for OCR: non-local-means colour denoising, then CLAHE contrast boost on the brightness channel only (HSV) so colours stay true. Tuned over 6 attempts to stop text from blurring. | OpenCV, NumPy |
 | 04 | [Text cleaning](notebooks/04-text-cleaning-regex.ipynb) | Fixes broken accents and encoding, strips emoji and repeated punctuation, collapses whitespace, and normalises inconsistent price formats | re, unicodedata |
 | 05 | [Structured data](notebooks/05-pandas-json-processing.ipynb) | Loads processed records from JSON into a DataFrame and checks types and contents | pandas |
 
